@@ -4,7 +4,7 @@ Registration Number: 22BCE0660
 
 Name: Divyanshu Singh
 
-# MERN Blog Application
+# Event Management System
 
 A full-stack event management platform designed for effective event organization, built using Next.JS
 
