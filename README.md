@@ -10,11 +10,11 @@ A full-stack event management platform designed for effective event organization
 
 ## Deployment
 
--   **Frontend**: [Vercel Deployment Link]()
+-   **Frontend**: [https://dbms-project-wheat.vercel.app/](https://dbms-project-wheat.vercel.app/)
 
 ## Tech Stack
 
 -   **Frontend**: JavaScript, Next.JS, Zustand, TailWindCSS.
 -   **Backend**: Node.js, Express, MongoDB, Mongoose, bcrypt.
 -   **Database**: MongoDB with Mongoose.
--   **Authentication**: JTW user login.
+-   **Authentication**: JWT user login.
