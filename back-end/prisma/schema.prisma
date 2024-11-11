@@ -1,0 +1,67 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Manager {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  Events    Event[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Event {
+  id               Int                @id @default(autoincrement())
+  eventname        String             @unique
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  Managers         Manager[]
+  EventParticipants EventParticipant[]
+  ActivityLogs      ActivityLog[]
+}
+
+enum AccomodationType {
+  DAY_SCHOLAR
+  GIRLS_HOSTEL
+  BOYS_HOSTEL
+}
+
+model EventParticipant {
+  id                Int                @id @default(autoincrement())
+  name              String
+  regno             String             @unique
+  phone             String
+  teamname          String
+  inOutStatus       Boolean
+  inOutUpdateTime   DateTime
+  Events            Event[]
+  ActivityLogs      ActivityLog[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  accomodationType AccomodationType    @default(DAY_SCHOLAR)
+  block             String?            @db.VarChar(15)
+}
+
+model ActivityLog {
+  id                 Int              @id @default(autoincrement())
+  Event              Event            @relation(fields: [eventId], references: [id])
+  Participants       EventParticipant @relation(fields: [eventParticipantId], references: [id])
+  status             Boolean
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+  eventParticipantId Int
+  eventId            Int
+}

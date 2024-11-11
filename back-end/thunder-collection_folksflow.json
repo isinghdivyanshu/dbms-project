@@ -1,0 +1,106 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "folksflow",
+    "collectionId": "772760d0-0d26-4833-a531-f4cc56964d96",
+    "dateExported": "2024-08-18T10:25:37.655Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f2d90e7a-3a43-40f9-a677-a83e5a86994f",
+            "colId": "772760d0-0d26-4833-a531-f4cc56964d96",
+            "containerId": "",
+            "name": "http://localhost:8000/api/auth/register",
+            "url": "http://localhost:8000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-14T22:21:16.344Z",
+            "modified": "2024-08-15T07:40:44.095Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"tesst099\",\n  \"email\": \"dm@gmail.com\",\n  \"password\": \"password123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "edac6d0d-5995-4d23-a4a6-02e4d1d6f70e",
+            "colId": "772760d0-0d26-4833-a531-f4cc56964d96",
+            "containerId": "",
+            "name": "online http://localhost:8000/api/auth/register Copy",
+            "url": "https://folksflow-backend-5igv.onrender.com/api/auth/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-17T12:50:05.773Z",
+            "modified": "2024-08-17T12:57:45.742Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"tess909\",\n  \"email\": \"dmi@gmail.com\",\n  \"password\": \"password123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "91186959-c3df-4d22-a702-c3fe8d86babe",
+            "colId": "772760d0-0d26-4833-a531-f4cc56964d96",
+            "containerId": "",
+            "name": "http://localhost:8000/api/participant/register",
+            "url": "https://folksflow-backend-5igv.onrender.com/api/participant/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-08-14T22:21:04.256Z",
+            "modified": "2024-08-17T13:11:18.965Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzkwMDEyMn0.dLum3JQjajIXOHHvQoGbdyTUd5nmzbHIXt_LqKJhw0I"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"regno\": \"123456\",\n    \"eventname\": \"dj\",\n    \"teamname\": \"CodeWarriors\",\n    \"phone\": \"123-456-7890\",\n    \"name\": \"John Doe\",\n    \"inOutStatus\": \"true\",\n    \"accommodationType\": \"DAY_SCHOLAR\",\n    \"block\": \"A1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2ac925b9-2db8-4468-afd7-349a6bfb31fe",
+            "colId": "772760d0-0d26-4833-a531-f4cc56964d96",
+            "containerId": "",
+            "name": "http://localhost:8000/auth/login Copy",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-08-15T07:33:25.274Z",
+            "modified": "2024-08-15T07:33:51.022Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"tesst99\",\n  \"password\": \"password123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0d4bcc5f-c367-4bf6-91d5-b8f287d30391",
+            "colId": "772760d0-0d26-4833-a531-f4cc56964d96",
+            "containerId": "",
+            "name": "http://localhost:8000/api/participant/register Copy",
+            "url": "http://localhost:8000/api/participant/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-08-17T13:09:13.362Z",
+            "modified": "2024-08-17T13:09:13.362Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksImlhdCI6MTcyMzcwNzIzM30.w8fB9oTyrXaf8-A5GP_f42KRGqgkYRQUUCztk9tdXNA"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"regno\": \"123456\",\n    \"eventname\": \"dj\",\n    \"teamname\": \"CodeWarriors\",\n    \"phone\": \"123-456-7890\",\n    \"name\": \"John Doe\",\n    \"inOutStatus\": \"true\",\n    \"accommodationType\": \"DAY_SCHOLAR\",\n    \"block\": \"A1\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "nMe3f3TjCOpA-Kni4PV_NNIEYCvIY54ttUjtaK05Vjj_sijGs8DSMbktKnHXZOi1p0FA9waUJWx2O4EsMUaYbA"
+}
